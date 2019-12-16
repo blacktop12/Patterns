@@ -5,12 +5,14 @@ public class Main
 	public static void main(String[] args)
     {
 		FabricadeAviones fabrica = new FabricadeAviones();
+		Estado objState = new Estado();
 
-        IModelosLigeros avion1 = fabrica.getLine( "Boeing" );
+		objState.mostrarAviso();
+		IModelosLigeros avion1 = fabrica.getLine( "Boeing" );
         IModelosLigeros avion2 = fabrica.getLine( "Airbus" );
         IModelosLigeros avion3 = fabrica.getLine( "Embraer" );
         IModelosLigeros avion4 = fabrica.getLine( "Boeing" );
-
+        
         System.out.println("-------------------");
 
         avion1.fabricar( 1, 4 );
