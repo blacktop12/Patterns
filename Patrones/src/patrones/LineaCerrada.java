@@ -8,6 +8,6 @@ public class LineaCerrada extends EstadoFabrica
 
     @Override
     public void mostrar() {
-        System.out.println("Alerta roja");
+        System.out.println("Linea de Producccion Cerrada");
     }
 }
